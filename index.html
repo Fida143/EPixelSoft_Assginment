@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="signup-form" class="form">
+            <h2>Sign up for a free account</h2>
+
+            <div class="form-groups">
+                <div class="form-group">
+                    <input type="text" id="first-name" placeholder="First name">
+                    <div class="error-message" id="first-name-error">First name is required.</div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="last-name" placeholder="Last name">
+                    <div class="error-message" id="last-name-error">Last name is required.</div>
+                </div>
+            </div>
+
+            <div class="form-groups">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email address">
+                    <div class="error-message" id="email-error">Invalid email address.</div>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="phone" placeholder="Phone Number">
+                    <div class="error-message" id="phone-error">Invalid phone number. Must be 10 digits.</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Create password">
+                <div class="error-message" id="password-error">Password must be at least 8 characters long.</div>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast">Form submitted successfully!</div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
